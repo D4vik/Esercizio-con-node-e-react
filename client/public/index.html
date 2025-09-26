@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Negozio di Vestiti</title>
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles/animations.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .search-bar-container {
+        width: 66%;
+        margin: 20px auto;
+      }
+
+      .search-bar {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2rem;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        transition: box-shadow 0.3s ease;
+      }
+
+      .search-bar:focus {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        outline: none;
+      }
+
+      #root {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-bar-container">
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="Cerca un capo..."
+        id="search-input"
+      />
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
